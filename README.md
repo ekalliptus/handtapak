@@ -1,15 +1,26 @@
-Author
--> Haikal Akhalul Azhar
-
 # handtapak
--> Hand Detection with Python
--> Screen Brightness Control
--> Sketch LiveCam
 
+Hand detection experiments with Python using OpenCV and MediaPipe, built on a small `HandDetection` wrapper class.
 
-#Library
--> https://pypi.org/project/opencv-python/
--> https://docs.python.org/3/library/math.html
--> https://numpy.org/install/
--> https://pypi.org/project/screen-brightness-control/
--> https://pypi.org/project/audio-utils/
+## Features
+
+- `handDetection.py`: wrapper class around MediaPipe Hands that finds hand landmarks in OpenCV frames.
+- `main.py`: webcam app that reads the thumb-index distance, sets screen brightness, and draws a volume percentage bar on the video feed.
+- `sketch.py`: live sketch camera (grayscale, blur, Canny edge filter).
+
+## Requirements
+
+- Python packages: opencv-python, mediapipe, numpy, screen-brightness-control, pycaw.
+
+## Usage
+
+```bash
+python main.py     # brightness control and volume bar from hand gestures
+python sketch.py   # live sketch camera
+```
+
+Press "p" in the OpenCV window to quit.
+
+## Author
+
+Haikal Akhalul Azhar
